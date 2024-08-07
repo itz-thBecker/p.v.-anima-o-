@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PV</title>
 
-<style>    
+<header class = "header">
 
-body{
-    background-color: #36454F;
+    <a class = "home"> Crentue tá Imparável </a>
 
-}
-.video{
-    display: flex;
-    justify-content: center;
-    top:90% ;
-
-}
+</header>
 
 
-    
-
-
-</style>
-<div class = 'video'>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3D40jUBXmlE?si=Gm4Sq82MhDoJyy1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
-</div>
 </head>
+
+
 <body>
+
+    <div class = 'video'>
+
+        <iframe width= "800" height="540" src="https://www.youtube.com/embed/3D40jUBXmlE?si=Gm4Sq82MhDoJyy1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
     
+    </div>
+    
+    <a class = "bloco"> O homem oferece seu grande amor para a "sua" dama, porém ao oferecer o seu amor, a dama o rejeita por ele<br> ser muito feio. <br><br>Ele saí triste, chorando e com o coração partido.<br><br>  Ao chegar perto de uma árvore, observa que há uma moça <br>encostada na árvore.<br><br> Quando a moça o vê, ela se aproxima e o homem<br> corresponde o ato ao se aproximar também.<br><br> Ao se encontrarem, ela oferece o seu amor a ele, <br>ao receber o amor dela, o coração do homem e volta a sua forma original.</a>
+
 </body>
+
+
 </html>
+
+<style>
+
+    :root {
+        --cor-de-fundo: #151B1F;
+        --cor-cabecalho: #111417;
+        --cor-texto: #CCCCCC;
+        --cor-bloco: #111417;
+        --tamanho-texto-padrão: 250%;
+    }
+    
+    
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    body {
+        background-color: var(--cor-de-fundo);
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        background-color: var(--cor-cabecalho);
+        font-family: 'Karma';
+    }
+    
+    .home {
+        font-family: "Oswald", sans-serif;
+        font-weight: bolder;
+        font-size: var(--tamanho-texto-padrão);
+        padding: 1.6% 9%;
+        color: var(--cor-texto);
+    }
+    
+    .video{
+        position: absolute;
+        margin: 30px ;
+        
+    }
+    
+    .bloco{
+        position: relative;
+        display: flex;
+        left: 850px;
+        font-size: 23px;
+        font-family: "Oswald", sans-serif;
+        background-color: #111417;
+        color:var(--cor-texto);
+        width: 500px;
+        top: 30px;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    </style>
